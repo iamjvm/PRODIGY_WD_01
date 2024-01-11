@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome and custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web\css\all.css">  
+    <title>PizzaFast!</title>
+    <script src="mobile-nav.js" defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+</head>
+<body>
+    <header id="header" class="flex-cointanier">
+        <a href="#" class="logo-link">
+            <img class="logo" id="header-img" src="img/logo.png" alt="pizza">
+            <h1>Pizza Fast!</h1>
+        </a>
+        <nav class="nav-links" id="nav-bar">
+            <a href="#hero" class="nav-link">Feature</a>
+            <a href="#how-its-made" class="nav-link">How it's made</a>
+            <a href="#price" class="nav-link">Price</a>
+        </nav>
+        <button onclick="openNav()"class="menu"><i class="fas fa-2x fa-bars"></i></button>
+    </header>
+
+    <div class="overlay" id="mobile-menu">
+        <a onclick="closeNav()" class="close-btn">&times;</a>
+        <div class="overlay-content">
+            <a href="#hero" onclick="closeNav()"">Feature</a>
+            <a href="#how-its-made" onclick="closeNav()">How it's made</a>
+            <a href="#price" onclick="closeNav()">Price</a>
+        </div>
+    </div>
+
+    <main>
+
+            <section id="hero">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                    <h2>Sign up to get <u>Discount codes</u></h2>
+                    <input class="email-input" type="email" name="email" placeholder="Enter your email ID here!" id="email">
+                    </b><input class="btn" type="submit" name="submit" id="submit" value="Get Started">
+                </form>
+            </section>
+
+            <div class="center-cointanier">
+            <section id="features">
+
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-3x fa-motorcycle"></i></div>
+                    <div class="description">
+                        <h2>Fast Home Delivery</h2>
+                        <p>
+                            We make sure you recieve your Pizza as soon as we have made it.
+                            We also provide free pizza if you are not satisfied with out delivery.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-3x fa-pepper-hot"></i></div>
+                    <div class="description">
+                        <h2>Fresh Vegetables</h2>
+                        <p>
+                            We use the freshest vegetables for all our pizzas.
+                            You will get some of the most crunchiest pizza toppings every
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-3x fa-pizza-slice"></i></div>
+                    <div class="description">
+                        <h2>Delicious Pizza</h2>
+                        <p>
+                            We make it a point to make every pizza we make the best we can. 
+                            We also provide free pizza if you are not satisfied with out delivery.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="how-its-made">
+            <iframe  height="315" src="https://www.youtube-nocookie.com/embed/6GEyjhoiJ_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+            </section>
+
+            <section id="price">
+
+                <div class="product" id="tenor">
+                    <div class="level">Small Pizza</div>
+                    <h2>Starting at 100rs</h2>
+                    <ol>
+                        <li>Tomato Pizza.</li>
+                        <li>Margherita Pizza.</li>
+                        <li>Cheese n Corn Pizza.</li>
+                        <li>Cheese n Tomato Pizza.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+
+                <div class="product" id="tenor">
+                    <div class="level">Medium Pizza</div>
+                    <h2>Starting at 250rs</h2>
+                    <ol>
+                        <li>Fresh Veggie Pizza.</li>
+                        <li>Farmhouse Pizza.</li>
+                        <li>Paneer Makhani Pizza.</li>
+                        <li>Peppy Paneer Pizza.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+
+                <div class="product" id="tenor">
+                    <div class="level">Big Pizza</div>
+                    <h2>Starting at 400rs</h2>
+                    <ol>
+                    <li>4 Cheese Pizza.</li>
+                    <li>Cheese Dominator Pizza.</li>
+                    <li>Veg Extravaganza Pizza.</li>
+                    <li>Indi Tandoori Pizza.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer footer-links">
+            <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+            </div>
+            <span>Copyright 2020, fast pizza!</span>
+        </div>
+    </footer>
+
+</body>
+</html>
